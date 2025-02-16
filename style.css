@@ -1,0 +1,153 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0073e6, #00ccff);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Headings */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #004d80, #00ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    animation: bounce 1.5s infinite alternate;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #0066cc, #00ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    border-bottom: 3px solid #0099cc;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+h2:hover {
+    transform: scale(1.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(0, 153, 204, 0.2);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    color: #004d80;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(0, 153, 204, 0.3);
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+button {
+    width: 95%;
+    padding: 12px;
+    margin: 10px;
+    background: linear-gradient(90deg, #004d80, #00ccff);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #003366, #0099cc);
+    transform: scale(1.05);
+}
+
+/* Event List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: rgba(0, 153, 204, 0.2);
+    color: #004d80;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.03);
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.delete-btn:hover {
+    background: #004d80;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
